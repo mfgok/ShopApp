@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ShopApp.Entities.Product>
+
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <ul>
+        @foreach (var item in Model)
+        {
+
+            <li>@item.Id @item.Name @item.Price</li>
+
+
+        }
+    </ul>
+</body>
+</html>
